@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 export interface Product {
   title: string;
@@ -14,5 +14,10 @@ export interface Product {
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent {
-  @Input() product: Product;
+  @Input() public product: Product;
+  @Output() addToWishlist: EventEmitter<Product> = new EventEmitter<Product>();
+
+  public addToWishlistButton(product: Product): void {
+    this.addToWishlist.emit(product);
+  }
 }

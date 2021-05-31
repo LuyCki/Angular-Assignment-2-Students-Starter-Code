@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Product1",
+      "description": "Product1 Description",
+      "price": 100,
+      "available": true,
+      "imageLink": "https://picsum.photos/200/300"
+    },
+    {
+      "id": 2,
+      "title": "Product2",
+      "description": "Product2 Description",
+      "price": 100,
+      "available": true,
+      "imageLink": "https://picsum.photos/200/300"
+    },
+    {
+      "id": 3,
+      "title": "Product3",
+      "description": "Product3 Description",
+      "price": 100,
+      "available": true,
+      "imageLink": "https://picsum.photos/200/300"
+    }
+  ]
+}
